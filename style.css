@@ -1,0 +1,65 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure html and body take up full height of viewport */
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    align-items: center;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/* hero */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    height: 10%;
+    margin: 10px;
+}
+.hero h2{
+    background-color: azure;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* main */
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 5px;
+    border: 5px solid aqua;
+    margin-top: 5%;
+    text-align: center;
+
+}
+.gridItem{
+    border: 5px solid aqua;
+}
+.gridItem h1{
+    margin: 25px;
+    font-size: 60px;
+    font-family: "Permanent Marker", cursive;
+}
+.gridItem:hover{
+    background-color: red;
+    cursor: pointer;
+}
+#statusText{
+}
+#restartBtn{
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: aqua;
+    cursor: pointer;
+}
